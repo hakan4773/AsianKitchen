@@ -97,30 +97,29 @@ buttonlar.appendChild(button);
 })
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const divelements = document.querySelector(".section-center");
+ document.addEventListener("DOMContentLoaded", function () {
+     const divelements = document.querySelector(".section-center");
+     menu.forEach((item, index) => {
+     const divelement = document.createElement("div");
+     divelement.classList.add("menu-items", "col-lg-6", "col-sm-12");
+     divelement.id = `item-${index}`;
 
-//   menu.forEach((item, index) => {
-//     const divelement = document.createElement("div");
-//     divelement.classList.add("menu-items", "col-lg-6", "col-sm-12");
-//     divelement.id = `item-${index}`;
-
-//     divelement.innerHTML = `
-//       <img src="${item.img}" alt="${item.title}" class="photo">
-//       <div class="menu-info">
-//         <div class="menu-title">
-//           <h4>${item.title}</h4>
-//           <h4 class="price">${item.price}</h4>
-//         </div>
-//         <div class="menu-text">
-//           ${item.desc}
-//         </div>
-//       </div>
-//     `;
+     divelement.innerHTML = `
+       <img src="${item.img}" alt="${item.title}" class="photo">
+       <div class="menu-info">
+         <div class="menu-title">
+           <h4>${item.title}</h4>
+           <h4 class="price">${item.price}</h4>
+        </div>
+         <div class="menu-text">
+           ${item.desc}
+         </div>
+       </div>
+     `;
     
 //     divelements.append(divelement);
 //   });
-// });
+ });
 
 
 //tümü
