@@ -117,8 +117,8 @@ buttonlar.appendChild(button);
        </div>
      `;
     
-//     divelements.append(divelement);
-//   });
+    divelements.append(divelement);
+  });
  });
 
 
